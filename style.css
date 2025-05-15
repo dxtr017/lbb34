@@ -1,0 +1,371 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Barlow; 
+    background-color: #1a1a1a; 
+    color: #f0f0f0; 
+}
+
+.container {
+    max-width: 1920px; 
+    margin: 0 auto; 
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+a {
+    color: #f0f0f0;
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: none; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+
+}
+ .logo-center img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 120px;
+}
+.site-header  {
+    border-bottom: 2px solid white;
+    background-color: #1a1a1a; 
+}
+.site-header .profile-link a {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #555;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.site-header .profile-link a:hover {
+     background-color: #444;
+     text-decoration: none;
+}
+
+.main-nav {
+    border-top: 2px solid white;
+    padding: 30px 0px 30px;
+}
+.main-nav ul {
+    gap: 120px;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li a {
+    border: 1px solid #858585; 
+    padding: 8px 40px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    font-size: 1.2em;
+}
+
+.main-nav ul li a:hover {
+     background-color: #333; 
+     text-decoration: none; 
+}
+
+
+/* Основний контент */
+.content-area {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    padding: 20px 0;
+}
+
+.news-column,
+.matches-column {
+    width: 600px; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Блоки новин */
+.news-item {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.news-item img {
+    width: 100%;
+}
+
+.news-item h2 {
+    font-size: 1.1em;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.preview-item a {
+    display: block; 
+    text-decoration: none;
+    color: inherit;
+}
+.preview-item a:hover h2 {
+     color: #ccc;
+}
+
+.preview-item a:hover img {
+    opacity: 0.9; 
+}
+
+.league-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #444;
+}
+
+.league-header img {
+    height: 130px; 
+    width: 600px;
+}
+
+.league-header span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+.league-header-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.league-header-link:hover .league-header {
+    opacity: 0.8; 
+}
+
+.match-date-group {
+    display: block;
+    font-size: 1em;
+    color: #aaa;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-left: 5px; 
+}
+
+.match {
+    background-color: #ffffffef; 
+    padding: 10px 15px;
+    margin-bottom: 10px; /
+}
+.match:last-child {
+    margin-bottom: 0;
+}
+
+.match-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 5px; 
+    transition: background-color 0.2s ease;
+}
+.match-link:hover .match {
+     background-color: #ffffff; 
+
+}
+
+
+.match-date {
+    font-weight: bold;
+    font-size: 1em;
+    color: #000000;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.match-details {
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-right:100px;
+}
+
+.match-details .team {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.match-details .team img {
+    height: 35px; 
+    width: 35px;
+}
+
+.match-details .time {
+    font-weight: bold;
+    font-size: 1.2em;
+    flex-basis: 15%;
+    text-align: center;
+    color: #000000;
+}
+
+@media (max-width: 1500px) {
+    .container {
+        max-width: 95%;
+    }
+    .content-area {
+        flex-direction: column;
+        align-items: center; 
+        gap: 50px; 
+    }
+    .news-column,
+    .matches-column {
+        width: 90%; 
+        max-width: 600px; 
+    }
+    .match-details { 
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .main-nav ul {
+        flex-wrap: wrap;             
+        justify-content: center;     
+        gap: 10px 15px;              
+        padding: 10px;
+    }
+
+    .main-nav ul li {
+        flex: 0 0 auto;              
+    }
+
+    .main-nav ul li a {
+        display: inline-block;       
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+.login-section {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.login-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    font-weight: bold;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #666;
+}
+
+.register-link {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.register-link a {
+    color: #87cefa;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px; 
+        padding-bottom: 15px; 
+    }
+    .main-nav ul {
+        justify-content: space-around;
+        gap: 10px; 
+        flex-wrap: wrap; 
+    }
+     .main-nav ul li a {
+        font-size: 1em;
+        padding: 8px 20px; 
+    }
+    .content-area {
+         gap: 30px; 
+    }
+     .match-details { 
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1em; 
+    }
+     .match-details .team img {
+        height: 25px;
+        width: 25px;
+    }
+     .match-details .score, .match-details .time {
+        font-size: 1.1em;
+    }
+
+    .site-footer {
+         justify-content: center; 
+    }
+   .main-nav ul {
+        flex-wrap: wrap;             
+        justify-content: center;     
+        gap: 10px 15px;             
+        padding: 10px;
+    }
+
+    .main-nav ul li {
+        flex: 0 0 auto;             
+    }
+
+    .main-nav ul li a {
+        display: inline-block;     
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
